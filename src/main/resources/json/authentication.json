@@ -1,0 +1,12 @@
+[
+	{
+		"username": "thomas.unger",
+		"hashedPassword": "",
+		"userMode": "master"
+	},
+	{
+		"username": "hugo.himmel",
+		"hashedPassword": "",
+		"userMode": "slave"
+	}
+]
