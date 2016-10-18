@@ -1,27 +1,25 @@
 package user;
 
+/**
+ * @author Thomas
+ *
+ */
 public class User {
-	private String username;
+	private String email;
 	private String hashedPassword;
-	private String userMode;
+	private String sessionToken;
+	private int balance;
 
-	public User(String username, String hashedPassword, String userMode) {
-		super();
-		this.username = username;
-		this.hashedPassword = hashedPassword;
-		this.userMode = userMode;
-	}
-	
 	public User() {
 		super();
 	}
 
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
+	public User(String email, String hashedPassword, String sessionToken, int balance) {
+		super();
+		this.email = email;
+		this.hashedPassword = hashedPassword;
+		this.sessionToken = sessionToken;
+		this.balance = balance;
 	}
 
 	public String getHashedPassword() {
@@ -32,11 +30,33 @@ public class User {
 		this.hashedPassword = hashedPassword;
 	}
 
-	public String getUserMode() {
-		return userMode;
+
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUserMode(String userMode) {
-		this.userMode = userMode;
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getSessionToken() {
+		return sessionToken;
+	}
+
+
+	public void setSessionToken(String sessionToken) {
+		this.sessionToken = sessionToken;
+	}
+
+
+	public int getBalance() {
+		return balance;
+	}
+
+
+	public void setBalance(int balance) {
+		this.balance = balance;
 	}
 }
