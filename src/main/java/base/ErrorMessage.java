@@ -1,21 +1,21 @@
-package user;
+package base;
 
 /**
  * @author Thomas
  *
  */
-public class RegisterError {
+public class ErrorMessage {
 	
 	private String errorMessage;
 
 	/**
 	 * 
 	 */
-	public RegisterError() {
+	public ErrorMessage() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public RegisterError(String errorMessage) {
+	public ErrorMessage(String errorMessage) {
 		super();
 		this.errorMessage = errorMessage;
 	}

@@ -24,7 +24,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import user.RegisterError;
+import base.ErrorMessage;
 import user.RegisterRequest;
 import user.RegisterResponse;
 import user.User;
@@ -54,7 +54,7 @@ public class UserController {
 		} else {
 			for (User user : storedUsers) {
 				if(user.getEmail().equals(request.getEmail())){
-					return (ResponseEntity<T>) new ResponseEntity<RegisterError>(new RegisterError("User already registered"), HttpStatus.OK);
+					return (ResponseEntity<T>) new ResponseEntity<ErrorMessage>(new ErrorMessage("User already registered"), HttpStatus.OK);
 				}
 			}
 		}
@@ -97,7 +97,7 @@ public class UserController {
 		}
 		
 		if (storedUsers.isEmpty()) {
-			return (ResponseEntity<T>) new ResponseEntity<RegisterError>(new RegisterError("No users registered"),
+			return (ResponseEntity<T>) new ResponseEntity<ErrorMessage>(new ErrorMessage("No users registered"),
 					HttpStatus.OK);
 		} else {
 			for (User user : storedUsers) {
@@ -110,7 +110,13 @@ public class UserController {
 				}
 			}
 		}
-		return (ResponseEntity<T>) new ResponseEntity<RegisterError>(new RegisterError("No users registered"),
+		return (ResponseEntity<T>) new ResponseEntity<ErrorMessage>(new ErrorMessage("No users registered"),
+				HttpStatus.OK);
+	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET, produces = "application/json")
+	<T> ResponseEntity<T> test() {
+		return (ResponseEntity<T>) new ResponseEntity<ErrorMessage>(new ErrorMessage("THIS IS TEST"),
 				HttpStatus.OK);
 	}
 
