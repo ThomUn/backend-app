@@ -1,14 +1,11 @@
-[
-	{
-		"email": "hugo.himmel@technikum-wien.at",
-		"hashedPassword": "$2a$10$3V4PRlRyGHpDtmJdc8L2S.hU1Z7bLnJBs24E6d0LL3YYA4mvS9hlK",
-		"sessionToken": "6763608f-0f82-4397-81db-06ae4cd8a6fd",
-		"balance": 13
-	},
-	{
-		"email": "thomas.unger@technikum-wien.at",
-		"hashedPassword": "$2a$10$OU3oar8ne3qW36TIv5o5.uPJTGQMekP6yjDAhbYuH.m30J3eWG84G",
-		"sessionToken": "d27ec796-e9b4-4daa-a4ce-bab95f154343",
-		"balance": 21
-	}
-]
+[ {
+  "email" : "hugo.himmel@technikum-wien.at",
+  "hashedPassword" : "$2a$10$3V4PRlRyGHpDtmJdc8L2S.hU1Z7bLnJBs24E6d0LL3YYA4mvS9hlK",
+  "sessionToken" : "",
+  "balance" : 11.9
+}, {
+  "email" : "thomas.unger@technikum-wien.at",
+  "hashedPassword" : "$2a$10$OU3oar8ne3qW36TIv5o5.uPJTGQMekP6yjDAhbYuH.m30J3eWG84G",
+  "sessionToken" : "",
+  "balance" : 22.1
+} ]

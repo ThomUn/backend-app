@@ -8,7 +8,7 @@ public class User {
 	private String email;
 	private String hashedPassword;
 	private String sessionToken;
-	private int balance;
+	private double balance;
 
 	public User() {
 		super();
@@ -51,12 +51,12 @@ public class User {
 	}
 
 
-	public int getBalance() {
+	public double getBalance() {
 		return balance;
 	}
 
 
-	public void setBalance(int balance) {
+	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 }
